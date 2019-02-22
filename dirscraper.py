@@ -22,6 +22,7 @@ parser.add_argument('-d', help='Includes domain name in output.', action="store_
 
 args = parser.parse_args()
 
+linkArr = [args.u]
 dirArr = []
 url = args.u + "/"
 r = requests.get(url)
